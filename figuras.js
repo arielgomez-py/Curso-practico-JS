@@ -60,7 +60,6 @@ function calcularAreaTriangulo(){
     const area = areaTriangulo(value_input1, value_input2, value_base, value_altura);
     alert(area);
 };
-
     //Perimetro
     function calcularPerimetroTriangulo(){
         const input_lado1 = document.getElementById("InputLado1");
@@ -78,5 +77,15 @@ function calcularAreaTriangulo(){
         const perimetro = perimetroTriangulo(value_input1, value_input2, value_base, value_altura);
         alert(perimetro);
 };
+//Circulo
+function calcularLongitudCircunferencia(){
+    const input_radio = document.getElementById("Radio");
+    const value_radio = Number(input_radio.value);
+   
+    const longitud = perimetroCirculo(value_radio);
+    alert(longitud);
+};
+
+
 
 
