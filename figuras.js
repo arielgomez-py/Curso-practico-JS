@@ -16,12 +16,8 @@ function areaTriangulo(base, altura){
 
 //Codigo circulo
 const pi = Math.PI;
-function diametroCirculo(radio){
-    return radio * 2;
-};
-function perimetroCirculo(){
-    const diametro = diametroCirculo(radio);
-    return diametro * pi;
+function perimetroCirculo(radio){
+    return 2 * pi * radio;
 }
 function areaCirculo(radio){
     return (radio * radio) * pi;
@@ -85,6 +81,14 @@ function calcularLongitudCircunferencia(){
    
     const longitud = perimetroCirculo(value_radio);
     alert(longitud);
+};
+
+function calcularAreaCirculo(){
+    const input_radio = document.getElementById("Radio");
+    const value_radio = Number(input_radio.value);
+    
+    const area = areaCirculo(value_radio);
+    alert(area);
 };
 
 
