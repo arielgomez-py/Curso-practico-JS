@@ -22,21 +22,32 @@ header{
     grid-area: header;
     background-color: rgb(36, 216, 132);
 }
+/*Main*/
 main{
     grid-area: main;
-    background-color: rgb(64, 233, 72);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "cuadrado triangulo circulo"
                          "cuadrado triangulo circulo"
                          "cuadrado triangulo circulo";
-   grid-column-gap: 10px;                      
+   grid-column-gap: 20px;                      
 }
-main .cuadrado{
-   background-color: blanchedalmond;
-   grid-area: cuadrado triangulo circulo;
+main #cuadrado{
+   background-color: rgb(224, 162, 67);
+   grid-area: cuadrado;
 }
+main #triangulo{
+    background-color: rgba(157, 245, 233, 0.87);
+    grid-area: triangulo;
+ }
+ main #circulo{
+    background-color: rgb(168, 246, 66);
+    grid-area: circulo;
+ }
+
+
+/*Footer*/
 footer{
     grid-area: footer;
     background-color: rgb(105, 103, 216);
