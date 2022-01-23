@@ -11,9 +11,11 @@ html{
     background-color: blanchedalmond;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap:10px;
     grid-template-areas: "header header header"
+                         "main main main"
+                         "main main main"
                          "main main main"
                          "main main main"
                          "footer footer footer";
@@ -34,7 +36,7 @@ main{
    grid-column-gap: 20px;                      
 }
 main #cuadrado{
-   background-color: rgb(224, 162, 67);
+   background-color: rgb(239, 253, 33);
    grid-area: cuadrado;
 }
 main #triangulo{
