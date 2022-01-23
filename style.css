@@ -13,6 +13,7 @@ html{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap:10px;
+    /*Definir la grilla principal*/
     grid-template-areas: "header header header"
                          "main main main"
                          "main main main"
@@ -20,19 +21,27 @@ html{
                          "main main main"
                          "footer footer footer";
 }  
+
+/*Header*/
 header{
     grid-area: header;
     background-color: rgb(36, 216, 132);
+}
+header h1{
+    font-size: 4rem;
+}
+header p{
+    font-size: 2rem;
 }
 /*Main*/
 main{
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
+    grid-template-rows: repeat(1,auto);
     grid-template-areas: "cuadrado triangulo circulo"
                          "cuadrado triangulo circulo"
-                         "cuadrado triangulo circulo";
+                         ;
    grid-column-gap: 20px;                      
 }
 main #cuadrado{
