@@ -56,14 +56,17 @@ main{
 h2{
     font-size: 2.4rem;
 }
-/*Formulario*/
-.from-cuadrado{
+/*Formulario del cuadrado y del circulo*/
+.from-cuadrado, .form-circulo{
     margin-top: 3.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    column-gap: 10px;
+    row-gap: 5px;
 }
-.from-cuadrado label{
-    font-size: 2rem;
-    display: inline-block; /*para poder definir su ancho*/
-    width: 50%;   
+.from-cuadrado label, .form-triangulo , .form-circulo label{
+    font-size: 1.6rem;
 }
 /*Estilos de los input de las tres secciones*/
 #InputCuadrado, #InputLado1, #InputLado2, #Altura, #Base, #Radio{
@@ -73,30 +76,16 @@ h2{
     background-color: rgb(253, 253, 185);
     border-radius: 4px;
 }
-#InputCuadrado{
-    position: relative;
-    left: 2rem;
-}
+
 /*Estilos generales de los botones de las tres secciones*/
 button{
     width: 8rem;
     height: 2.4rem;
     font-size: 1.4rem;
-    position: relative;
-    border-radius: 5px;
     background-color: rgb(240, 247, 142);
-}
-.btn-area-cuadrado{
-    left: 15rem;
-    top: 2.5rem;
+    border-radius: 5px;
     font-weight: bold;
 }
-.btn-perimetro-cuadrado{
-    top: 5rem;
-    right: 2.4rem;
-    font-weight: bold;
-}
-
 /*Triangulo*/
 #triangulo{
     grid-area: triangulo; 
@@ -105,19 +94,16 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: "label input"
-                         "label input"
-                         "label input"
-                         "label input"
-                         "label input"
-                         "label input";
+    column-gap: 10px;
+    row-gap: 5px;
+    margin-top: 3.6rem;
  }
+ 
  /*Circulo*/
  #circulo{
     grid-area: circulo;
  }
-
-
+ 
 /*Footer*/
 footer{
     grid-area: footer;
