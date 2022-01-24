@@ -9,6 +9,7 @@ html{
 
 .body{
     background-color: blanchedalmond;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -25,7 +26,6 @@ html{
 /*Header*/
 header{
     grid-area: header;
-    background-color: rgb(36, 216, 132);
 }
 header h1{
     font-size: 4rem;
@@ -44,16 +44,62 @@ main{
                          ;
    grid-column-gap: 20px;                      
 }
-main #cuadrado{
-   background-color: rgb(239, 253, 33);
-   grid-area: cuadrado;
+/*Cuadrado*/
+#cuadrado{
+   background-color: rgb(74, 252, 213);
+   grid-area: cuadrado; 
+   padding: 2rem; 
+   box-shadow: 5px 5px 5px grey;
+   border-radius: 10px;
 }
-main #triangulo{
+#cuadrado h2{
+    font-size: 2.4rem;
+}
+/*Formulario*/
+.from-cuadrado{
+    margin-top: 3.6rem;
+}
+.from-cuadrado label{
+    font-size: 2rem;
+    display: inline-block; /*para poder definir su ancho*/
+    width: 50%;   
+}
+#InputCuadrado{
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.8rem;
+    position: relative;
+    left: 2rem;
+    background-color: rgb(253, 253, 185);
+    border-radius: 4px;
+}
+.from-cuadrado button{
+    width: 8rem;
+    height: 2.4rem;
+    font-size: 1.4rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(240, 247, 142);
+}
+.btn-area-cuadrado{
+    left: 15rem;
+    top: 2.5rem;
+    font-weight: bold;
+}
+.btn-perimetro-cuadrado{
+    top: 5rem;
+    right: 2.4rem;
+    font-weight: bold;
+}
+
+/*Triangulo*/
+#triangulo{
     background-color: rgba(157, 245, 233, 0.87);
     grid-area: triangulo;
  }
- main #circulo{
-    background-color: rgb(168, 246, 66);
+ /*Circulo*/
+ #circulo{
+    background-color: rgb(134, 255, 239);
     grid-area: circulo;
  }
 
@@ -61,5 +107,4 @@ main #triangulo{
 /*Footer*/
 footer{
     grid-area: footer;
-    background-color: rgb(105, 103, 216);
 }
